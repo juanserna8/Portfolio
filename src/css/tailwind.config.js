@@ -87,6 +87,8 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         'red-hat-display': ['"Red Hat Display"', 'sans-serif'],
         encode: ['Encode Sans Semi Expanded', 'sans-serif'],
+        open: ['Open Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       fontSize: {
         xs: ['0.75rem', { lineHeight: '1.5' }],
