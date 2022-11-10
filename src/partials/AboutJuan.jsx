@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
 
-import CarouselImage01 from '../images/carousel-item-01.jpg';
-import CarouselImage02 from '../images/carousel-item-02.jpg';
-import CarouselImage03 from '../images/carousel-item-03.jpg';
-import CarouselImage04 from '../images/carousel-item-04.jpg';
-import CarouselImage05 from '../images/carousel-item-05.jpg';
 import JuanAbout from '../images/Juan-about.svg';
 import About1 from '../images/About1.jpg';
-import About2 from '../images/About2r.jpg';
-import About3 from '../images/About3.jpeg'
+import About2 from '../images/About20.jpg';
+import About3 from '../images/About30.jpg';
 
 
 // Import Swiper
@@ -47,16 +42,16 @@ function Carousel() {
             <img src={JuanAbout} alt="Juan's pic" className='mt-4' />
           </div>
           {/* Second column */}
-          <div className='pt-[6rem] md:pl-4 md:pr-8 grid'>
+          <div className='md:pt-[6rem] md:pl-4 md:pr-8 grid'>
             <p className=''>I am an easy going Web Developer who enjoys working in team and sharing ideas and solutions with the people that sorround me. I'm always looking for ways to improve efficiency and add value to people, groups and organizations.</p>
             <p className='pt-2'>I have a formal qualification in Industrial Engineering, and work experience in Business Consultancy in Strategic Planning, HR and Digital Transformation projects.</p>
             <p className='pt-2'>Most recently, I have been focused on the usage of front-end and programing technologies to make entrepreneurs' lives easier, by automating repetitive processes such as making tax invoices and sending confirmation emails</p>
 
             {/* Images */}
-            <div className='grid grid-cols-3 gap-4 pl-4 mt-4'>
-              <img src={About1} alt="photo-working-out" className='object-scale-down w-[12rem] rounded border border-gray-400' />
-              <img src={About2} alt="photo-travelling" className='object-scale-down w-[8rem] rounded border border-gray-400' />
-              <img src={About3} alt="photo-eating-out" className='object-scale-down w-[5.5rem] rounded border border-gray-400' />
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-4 pl-4 mt-4'>
+              <img src={About1} alt="photo-working-out" className='object-fill h-[10rem] aspect-square mr-4 rounded border border-gray-400' />
+              <img src={About2} alt="photo-travelling" className='object-fill h-[10rem] aspect-square mr-4 rounded border border-gray-400' />
+              <img src={About3} alt="photo-eating-out" className='col-span-2 mx-auto object-scale h-[10rem] aspect-square rounded border border-gray-400' />
             </div>
           </div>
         </div>
