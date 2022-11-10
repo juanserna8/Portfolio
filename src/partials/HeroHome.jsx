@@ -5,6 +5,7 @@ import MockupImage from '../images/mockup-image-01.jpg';
 import IphoneMockup from '../images/iphone-mockup.png';
 import PlayBtn from '../images/play-button.svg';
 import JuanPhone from "../images/Juan-phone.svg"
+import Resume from "../assets/resume.pdf"
 
 function HeroHome() {
 
@@ -22,31 +23,25 @@ function HeroHome() {
             <div className="md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left">
               <h1 className="h1 lg:text-6xl mb-4 font-open" data-aos="fade-down">Hey there, I'm Juan Serna</h1>
               <p className="text-3xl text-gray-600 font-poppins dark:text-white" data-aos="fade-down" data-aos-delay="150">Front-end Developer</p>
-              <a className="mt-8 btn text-white text-xl bg-teal-500 hover:bg-orange-700 shrink-0" href="#0">
+              <a className="mt-8 btn text-white text-xl bg-teal-500 hover:bg-orange-700 shrink-0" href={Resume} download>
                 Resume
                 <svg class="h-6 w-6 text-white ml-4"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
                 </svg>
               </a>
             
-              <ul className="max-w-sm sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2" data-aos="fade-down" data-aos-delay="450">
+              <ul className="max-w-sm sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2 font-poppins" data-aos="fade-down" data-aos-delay="450">
                 <li className="flex items-center mb-2">
                   <svg className="w-3 h-3 fill-current text-teal-400 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Lorem ipsum is placeholder text commonly.</span>
+                  <span>Based in Hobart, Tasmania.</span>
                 </li>
                 <li className="flex items-center mb-2">
                   <svg className="w-3 h-3 fill-current text-teal-400 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Excepteur sint occaecat cupidatat.</span>
-                </li>
-                <li className="flex items-center mb-2">
-                  <svg className="w-3 h-3 fill-current text-teal-400 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Lorem ipsum is placeholder text commonly.</span>
+                  <span>Front-end development, Business Consultancy and Digital Transformation.</span>
                 </li>
               </ul>
             </div>
