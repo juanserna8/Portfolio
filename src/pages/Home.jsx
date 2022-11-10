@@ -4,6 +4,7 @@ import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import Stats from '../partials/Stats';
+import AboutJuan from '../partials/AboutJuan'
 import Carousel from '../partials/Carousel';
 import Tabs from '../partials/Tabs';
 import Process from '../partials/Process';
@@ -31,6 +32,7 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <Stats />
+        <AboutJuan />
         <Carousel />
         <Tabs />
         <Process />
