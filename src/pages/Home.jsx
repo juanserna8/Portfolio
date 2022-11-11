@@ -5,6 +5,7 @@ import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import Stats from '../partials/Stats';
 import AboutJuan from '../partials/AboutJuan'
+import Skillset from '../partials/Skillset'
 import Carousel from '../partials/Carousel';
 import Tabs from '../partials/Tabs';
 import Process from '../partials/Process';
@@ -33,6 +34,7 @@ function Home() {
         <HeroHome />
         <Stats />
         <AboutJuan />
+        <Skillset />
         <Carousel />
         <Tabs />
         <Process />
