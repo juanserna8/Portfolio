@@ -46,6 +46,7 @@ function Carousel() {
             <p className=''>I am an easy going Web Developer who enjoys working in team and sharing ideas and solutions with people that sorround me. I'm always looking for ways to improve efficiency and add value to colleagues, groups and organizations.</p>
             <p className='pt-2'>I have a formal qualification in Industrial Engineering, and work experience in Business Consultancy in Strategic Planning, HR and Digital Transformation projects.</p>
             <p className='pt-2'>Most recently, I have been focused on the usage of front-end and programing technologies to make entrepreneurs' lives easier, by automating repetitive processes such as making tax invoices and sending confirmation-informative emails, and also developing web applications built with React and serverless services like AWS Lambda and AWS Amplify.</p>
+            <p className='pt-2'>When I'm not coding, studying or working, you can find me having coffee, lost in the bush or training.</p>
 
             {/* Images */}
             <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 px-4 lg:pl-4 mt-4'>
