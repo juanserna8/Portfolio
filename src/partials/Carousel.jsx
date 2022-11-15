@@ -54,12 +54,12 @@ function Carousel() {
             <div className="swiper-slide max-w-lg">
               <img className="transition-opacity duration-300" src={CarouselImage01} width="540" height="460" alt="Carousel item 01" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
-                <div className="flex grow">
+                {/* <div className="flex grow">
                   <a className="inline-flex btn-sm text-white bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0">Learn more</a>
-                </div>
-                <div className="absolute bottom-0 right-0 p-6">
+                </div> */}
+                {/* <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Creative Services</a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="swiper-slide max-w-lg">
