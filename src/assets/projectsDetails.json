@@ -2,13 +2,14 @@
 [
     {
         "name": "The Ever Cake Website",
+        "link": "https://dev.db61t1u90mry8.amplifyapp.com/",
         "id": 1,
         "info": 
             [
                 {
                     "title": "Home page",
                     "image": "../src/images/the-ever-home.jpg",
-                    "description": "Full stack web application built with React JS, Tailwind CSS, Redux Toolkit and Node JS. Integration with Stripe (payment gateway), and back-end processes are made using AWS services (Lambda functions, AWS SES, Dynamo DB)"
+                    "description": "Full stack web application built with React JS, Tailwind CSS, Redux Toolkit and Node JS. Integration with Stripe (payment gateway), and back-end processes are made using AWS services (Lambda functions, AWS SES, Dynamo DB)."
                 },
                 {
                     "title": "Online shop",
@@ -33,12 +34,13 @@
                 {
                     "title": "Dynamo DB",
                     "image": "../src/images/dynamo.jpg",
-                    "description": "A Dynamo DB receives the orders' details (order ID, customer contact details, products selected, delivery date and total price). This database is what the business owner can use to check the orders history and filter the information by periods of time, flavours, etc. "
+                    "description": "A Dynamo DB receives the orders' details (order ID, customer contact details, products selected, delivery date and total price). This database is what the business owner can use to check the orders history and filter the information by periods of time, flavours, etc."
                 }
             ]
     },
     {
         "name": "2 Hands Services",
+        "link": "https://2handsservices.com/",
         "id": 2,
         "info": 
             [
