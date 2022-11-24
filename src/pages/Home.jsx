@@ -14,6 +14,7 @@ import TestimonialsBlocks from '../partials/TestimonialsBlocks';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Cta from '../partials/Cta';
 import Footer from '../partials/Footer';
+import Contact from '../partials/Contact';
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ function Home() {
         <Stats />
         <AboutJuan />
         <Skillset />
+        <Contact />
         <Carousel />
         <Tabs />
         <Process />
