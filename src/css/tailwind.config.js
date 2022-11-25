@@ -72,6 +72,9 @@ module.exports = {
         },
         smoke: {
           100: '#4E301D',
+        },
+        aquamarine: {
+          100: '#bbed2f',
         }
       },
       outline: {
