@@ -37,8 +37,8 @@ function Carousel() {
       <div className="py-12 md:py-20 mx-auto px-4 sm:px-6">
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 font-poppins'>
           {/* First column */}
-          <div className='col-span-1 flex flex-col justify-center mx-auto'>
-            <h1 className='h1 lg:text-3xl mb-4 text-center'>About me</h1>
+          <div className='col-span-1 flex flex-col mx-auto items-start'>
+            <h1 className='h1 lg:text-3xl mb-4 text-center mx-auto items-center'>About me</h1>
             <img src={JuanAbout} alt="Juan's pic" className='mt-4' />
           </div>
           {/* Second column */}
