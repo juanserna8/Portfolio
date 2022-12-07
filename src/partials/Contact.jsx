@@ -27,7 +27,7 @@ function Contact() {
     <section className="border-t border-transparent dark:border-gray-800">
       <div className="py-12 md:py-20 mx-auto px-4 sm:px-6">
         <div className='font-poppins max-w-3xl mx-auto'>
-          <h1 className='h1 lg:text-3xl mb-4'>Get in touch</h1>
+          <h1 className='h1 lg:text-3xl mb-4'>Get in touch guys</h1>
           <div className='grid grid-cols-12 mt-6 gap-2'>
             <div className='col-span-5'>
               <img src={Select} alt="Juan's photo" />
