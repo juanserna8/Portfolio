@@ -1,8 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Select from '../images/select.png';
 
 function Contact() {
+
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const details = {name, phone, email, message}
+
+    fetch('http://localhost:8000', {
+      method: 'POST',
+      headers: {'Content-type': 'application/json'},
+      body: JSON.stringify(details)
+    }).then(() => {
+      console.log('Hola uzmi')
+    })
+  }
+
 
   return (
     <section className="border-t border-transparent dark:border-gray-800">
@@ -38,12 +57,12 @@ function Contact() {
                 <p className='text-xl text-gray-600 font-poppins dark:text-white'>Call me or leave a message</p>
                 <svg className="h-6 w-6 text-white"  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="7 7 12 12 17 7" />  <polyline points="7 13 12 18 17 13" /></svg>
               </div>
-              <form className='hidden md:flex items-center mt-4'>
+              <form onSubmit={handleSubmit} className='hidden md:flex items-center mt-4'>
                 <div className='flex flex-col'>
-                  <input className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' type="text" name="" id="" placeholder="Name" required/>
-                  <input className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' type="text" name="" id="" placeholder="Phone"/>
-                  <input className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' type="text" name="" id="" placeholder="Email" required/>
-                  <input className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' type="text" name="" id="" placeholder="Message" required/>
+                  <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="" id="" placeholder="Name" className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' required/>
+                  <input value={phone} onChange={(e) => setPhone(e.target.value)} type="number" name="" id="" placeholder="Phone" className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' required/>
+                  <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="" id="" placeholder="Email" className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' required/>
+                  <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" name="" id="" placeholder="Message" className='w-[18.5rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-4 text-gray-600 dark:text-gray-400 text-lg' required/>
                   <button className='mt-4 text-white rounded text-sm text-center w-full bg-teal-500 hover:bg-orange-700 shrink-0 px-2 h-10'>
                     <span>Send message</span>
                   </button>
@@ -72,8 +91,8 @@ function Contact() {
           <form className='mt-4 pl-2 flex items-center md:hidden' action="">
             <div className='flex flex-col'>
               <input className='w-[13rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-2 text-gray-600 dark:text-gray-400 text-sm' type="text" name="" id="" placeholder="Name" required/>
-              <input className='w-[13rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-2 text-gray-600 dark:text-gray-400 text-sm' type="text" name="" id="" placeholder="Phone"/>
-              <input className='w-[13rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-2 text-gray-600 dark:text-gray-400 text-sm' type="text" name="" id="" placeholder="Email" required/>
+              <input className='w-[13rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-2 text-gray-600 dark:text-gray-400 text-sm' type="tel" name="" id="" placeholder="Phone" required/>
+              <input className='w-[13rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-2 text-gray-600 dark:text-gray-400 text-sm' type="email" name="" id="" placeholder="Email" required/>
               <input className='w-[13rem] bg-transparent border-t-0 border-l-0 border-r-0 border-b-1 p-0 mb-2 text-gray-600 dark:text-gray-400 text-sm' type="text" name="" id="" placeholder="Message" required/>  
             </div>
             <div className='mx-auto flex justify-center'>
