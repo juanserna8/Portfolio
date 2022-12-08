@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/contact": {
+      "name": "/contact",
+      "lambdaFunction": "processQuotes",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

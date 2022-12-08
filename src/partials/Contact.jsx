@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 
 import Select from '../images/select.png';
 
@@ -9,25 +10,40 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const details = {name, phone, email, message}
-
-    fetch('http://localhost:8000', {
-      method: 'POST',
-      headers: {'Content-type': 'application/json'},
-      body: JSON.stringify(details)
-    }).then(() => {
-      console.log('Hola uzmi')
-    })
+    try{
+      let res = await API.post('contact', '/contact', {
+        body: {
+          name: name,
+          phone: phone,
+          email: email,
+          message: message
+        },
+      });
+      if (res.status === 200) {
+        setName('');
+        setPhone('');
+        setEmail('');
+        setMessage('')
+        toast("Success, your message has been sent", {
+          type: 'success'
+        })
+      } else {
+        toast("Failure, your request couldn't be processed", {
+          type: 'error'
+        })
+      }
+    } catch(err) {
+      console.log(err)
+    }
   }
-
 
   return (
     <section className="border-t border-transparent dark:border-gray-800">
       <div className="py-12 md:py-20 mx-auto px-4 sm:px-6">
         <div className='font-poppins max-w-3xl mx-auto'>
-          <h1 className='h1 lg:text-3xl mb-4'>Get in touch guys</h1>
+          <h1 className='h1 lg:text-3xl mb-4'>Get in touch</h1>
           <div className='grid grid-cols-12 mt-6 gap-2'>
             <div className='col-span-5'>
               <img src={Select} alt="Juan's photo" />
