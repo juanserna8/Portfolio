@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import { API } from 'aws-amplify';
 
 import Select from '../images/select.png';
 
@@ -13,7 +14,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      let res = await API.post('contact', '/contact', {
+      let res = await API.post('quotes', '/create', {
         body: {
           name: name,
           phone: phone,

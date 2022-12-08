@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "processQuotes",
+            "handleQuotes",
             {
               "Fn::Join": [
                 "",
                 [
-                  "processQuotes",
+                  "handleQuotes",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "portfolioLambdaRole013c300d",
+            "portfolioLambdaRole09e256d4",
             {
               "Fn::Join": [
                 "",
                 [
-                  "portfolioLambdaRole013c300d",
+                  "portfolioLambdaRole09e256d4",
                   "-",
                   {
                     "Ref": "env"
