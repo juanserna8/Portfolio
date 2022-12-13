@@ -1,19 +1,19 @@
 {
   "function": {
-    "handleQuotes": {
+    "handleRequests": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "api": {
-    "quotes": {
+    "requests": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "handleQuotes",
+          "resourceName": "handleRequests",
           "attributes": [
             "Name",
             "Arn"

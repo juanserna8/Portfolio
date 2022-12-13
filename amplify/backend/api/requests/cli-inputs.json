@@ -3,7 +3,7 @@
   "paths": {
     "/create": {
       "name": "/create",
-      "lambdaFunction": "handleQuotes",
+      "lambdaFunction": "handleRequests",
       "permissions": {
         "setting": "open"
       }

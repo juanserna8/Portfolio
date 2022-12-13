@@ -14,7 +14,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      let res = await API.post('quotes', '/create', {
+      let res = await API.post('requests', '/create', {
         body: {
           name: name,
           phone: phone,

@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
     "function": {
-        "handleQuotes": {
+        "handleRequests": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",
@@ -8,7 +8,7 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "api": {
-        "quotes": {
+        "requests": {
             "RootUrl": "string",
             "ApiName": "string",
             "ApiId": "string"
