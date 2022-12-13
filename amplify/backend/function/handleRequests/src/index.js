@@ -5,8 +5,8 @@
  */
 exports.handler = async (event) => {
     console.log(`EVENT: ${JSON.stringify(event)}`);
-    const customerId = event.pathParameters.customerId;
-    const customer = {'customerId': customerId, 'customerName': 'customer ' + customerId}
+    
+    const parsedBody = JSON.parse(event.body)
 
     const response = {
         statusCode: 200,
@@ -14,7 +14,9 @@ exports.handler = async (event) => {
                  "Access-Control-Allow-Origin": "*",
                  "Access-Control-Allow-Headers": "*"
         },
-        body: JSON.stringify(customer),
+        // body: JSON.stringify(customer),
+        
         }
         return response
+        console.log(parsedBody.name, parsedBody.email, parsedBody.message)
 };
