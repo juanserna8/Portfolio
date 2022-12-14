@@ -15,7 +15,7 @@
       "function": {
         "handleRequests": {
           "deploymentBucketName": "amplify-portfolio-dev-152446-deployment",
-          "s3Key": "amplify-builds/handleRequests-526b532f597779417337-build.zip"
+          "s3Key": "amplify-builds/handleRequests-416631794f5673325131-build.zip"
         }
       },
       "api": {
